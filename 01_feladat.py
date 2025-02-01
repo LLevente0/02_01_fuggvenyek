@@ -20,4 +20,12 @@ print(osszegzo([3, 4, 5]))
 A program tartalmazza a függvény hívását is!"""
 
 
+def paros_e(szamok):
+    if any(n % 2 == 0 for n in szamok):
+        return True
+    else:
+        return False
 
+
+num = [3, 4, 5]
+print(paros_e(num))
