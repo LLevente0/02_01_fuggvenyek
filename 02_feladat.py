@@ -5,11 +5,34 @@ A program tartalmazza a függvény hívását is!"""
 
 
 def paros_e(szamok):
-    if any(n % 2 == 0 for n in szamok):
-        return True
-    else:
-        return False
+    #  index = 0
+    # while index < len(szamok):
+    #  if szamok[index] % 2 == 0:
+    #     return True
+    # index = index + 1
+    #else:
+    #return False
+
+    # index = 0
+    # for szam in szamok:
+    #     if szamok[index] % 2 == 0:
+    #         return True
+    #     index = index + 1
+    #
+    # return False
+
+    for index in range(len(szamok)):
+        if szamok[index] % 2 == 0:
+            return True
+
+    return False
+
+    # for szam in szamok:
+    #     if szam % 2 == 0:
+    #         return True
+    #
+    # return False
 
 
-num = [3, 4, 5]
+num = [3, 5, 9]
 print(paros_e(num))
