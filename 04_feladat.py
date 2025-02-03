@@ -8,4 +8,23 @@
 A program tartalmazzon mindegyik síkidom típusra egy-egy függvényhívást!"""
 
 
+def kerulet(a, *b):
+    if len(b) == 0:
+        return 4 * a
+    elif len(b) == 1:
+        return 2 * (a + b[0])
+    elif len(b) == 2:
+        return a + b[0] + b[1]
+    else:
+        return a + sum(b)
 
+
+
+
+print(f'Négyzet kerülete: {kerulet(5)}')  # a = 5
+
+print(f'Téglalap kerülete: {kerulet(5, 10)}')
+
+print(f'Háromszög kerülete: {kerulet(3, 4, 5)}')
+
+print(f'Sokszög kerülete: {kerulet(2, 3, 4, 5)}')
