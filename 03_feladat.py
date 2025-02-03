@@ -10,10 +10,10 @@ def harommal_oszthatok(lista):
     for index in range(len(lista)):
         if lista[index] % 3 == 0:
             hanyszor_fordul_elo += 1
-    print(hanyszor_fordul_elo)
+    return hanyszor_fordul_elo
 
 
 
 szamok = [3, 4, 5, 6]
-harommal_oszthatok(szamok)
+print(harommal_oszthatok(szamok))
 
