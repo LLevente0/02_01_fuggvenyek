@@ -17,3 +17,29 @@ def harommal_oszthatok(lista):
 szamok = [3, 4, 5, 6]
 print(harommal_oszthatok(szamok))
 
+
+
+"""3.2 Feladat
+Alakítsd át az előző programot úgy, hogy a felhasználó által megadott számokat 
+tárolja el a program egy listában, és ezt értékelje ki a függvény! 
+(Az adatbeolvasás addig tartson, míg a felhasználó negatív számot nem ad meg!)"""
+
+
+
+def harommal_oszthatok(lista):
+    hanyszor_fordul_elo = 0
+    for index in range(len(lista)):
+        if lista[index] % 3 == 0:
+            hanyszor_fordul_elo += 1
+    return hanyszor_fordul_elo
+
+
+
+szam = int(input("Adj meg számokat! "))
+
+
+print(harommal_oszthatok(szamok))
+
+
+
+
